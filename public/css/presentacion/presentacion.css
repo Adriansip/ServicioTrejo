@@ -1,0 +1,29 @@
+body {
+    /*PENDIENTE
+    background-color: rgba(105, 127, 108, 1);*/
+}
+#primerContenedor {
+    padding: 1%;
+    background: rgba(215, 219, 220, 0.8);
+}
+#segundoContenedor {
+    padding: 1%;
+    background: rgba(39, 39, 41, 0.8);
+}
+#titulo {
+    color: #000;
+}
+#textoPrincipal {
+    padding: 1%;
+    background: rgba(5, 5, 5, 0.1);
+    color: #000;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.subtitulos {
+    font-size: 1.2rem;
+    color: #F8E741;
+}
+.contenedorImagen:hover {
+    border: 0.5px solid yellow;
+}
