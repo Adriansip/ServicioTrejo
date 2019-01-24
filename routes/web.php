@@ -26,3 +26,4 @@ Route::get('Nosotros', function () {
 Route::get('Productos', 'ProductoController@index');
 
 Route::get('Productos/categoria/{idCategoria}', 'ProductoController@productosCategoria');
+Route::get('Productos/categoria/{idCategoria}/{idMarca}/{precio}/{dato}', 'ProductoController@buscador');

@@ -39,7 +39,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active"><a href="/Nosotros" class="nav-link">Nosotros</a></li>
-                        <li class="nav-item"><a href="/Productos/1" class="nav-link">Productos</a></li>
+                        <li class="nav-item"><a href="/Productos" class="nav-link">Productos</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

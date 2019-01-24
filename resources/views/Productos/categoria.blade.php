@@ -1,14 +1,21 @@
-<div class="card-deck">
-	@foreach($productos as $producto)
-	<div class="card text-white bg-success col-sm-4 pl-2 pt-3">
+<div class="col-sm-12">
+			@if(Session::has('message'))
+			<div class="alert alert-{{Session::get('class')}} alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>{{Session::get('message')}}</div>
+			@endif
+</div>
+@foreach($productos as $producto)
+<div class="col-sm-4 row mb-1 tarjetas ml-1">
+	<div class="card text-white bg-info">
 		<div class="card-header">
-			<h5 class="card-title text-center">{{$producto->producto}}</h5>
+			<h6 class="card-title text-center">{{$producto->producto}}</h6>
 		</div>
-		<img src="{{asset('imagenes/cartuchos.jpg')}}" class="card-img-top" alt="cartuchos">
+		<img src="{{asset('imagenes/')}}/{{$producto->imagen}}" class="card-img img-fluid p-1" alt="cartuchos">
 		<div class="card-body">
-			<p class="card-text">{{$producto->descripcion}}</p>
+			<p class="card-text text-title">{{$producto->descripcion}}</p>
 			<ul>
-				<li>MARCA: {{$producto->marca->marca}}</li>
+				<li>Marca: {{$producto->marca->marca}}</li>
+				<li>Unidad: {{$producto->unidad->unidad}}</li>
 			</ul>
 			
 		</div>
@@ -16,5 +23,16 @@
 			<a href="#" class="btn btn-primary btn-block btn-lg">$ {{$producto->precio}}</a>
 		</div>
 	</div>
-	@endforeach
 </div>
+<hr>
+@endforeach
+<style type="text/css">
+	.tarjetas:hover{
+		border: 3px solid yellow;
+	}
+</style>
+<script type="text/javascript">
+	$('.tarjetas').on('click', function() {
+		//Code
+});
+</script>

@@ -42,7 +42,7 @@ class CreateClientesTable extends Migration
     public function down()
     {
         Schema::table('clientes', function (Blueprint $table) {
-            $table->dropForeign('clientes_id_foreign');
+            $table->dropForeign('clientes_idUsuario_foreign');
             $table->dropForeign('clientes_idCiudad_foreign');
         });
 

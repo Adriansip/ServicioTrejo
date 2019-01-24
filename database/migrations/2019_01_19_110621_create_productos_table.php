@@ -21,6 +21,7 @@ class CreateProductosTable extends Migration
             $table->integer('idMarca')->unsigned()->nullable();
             $table->text('descripcion')->nullable();
             $table->float('precio')->nullable();
+            $table->string('imagen')->nullable();
             $table->timestamps();
 
             $table->foreign('idCategoria')
